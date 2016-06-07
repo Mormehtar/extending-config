@@ -19,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/Mormehtar/extending-config/issues"
   },
-  "homepage": "https://github.com/Mormehtar/extending-config#readme"
+  "engines": {
+    "node": ">=6.2.0"
+  },
+  "homepage": "https://github.com/Mormehtar/extending-config#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "deep-assign": "^2.0.0"
+  }
 }
