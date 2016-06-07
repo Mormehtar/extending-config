@@ -4,7 +4,7 @@
   "description": "configuration through demanding common config and updating it with environment-dependent part",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test node ./node_modules/mocha/bin/_mocha --recursive ./tests"
   },
   "repository": {
     "type": "git",

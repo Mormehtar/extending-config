@@ -11,7 +11,6 @@ function config({basePath = path.join(process.cwd(), 'config'), environment = en
         base = requireDirectory(path.join(basePath, common));
     }
     var envDependent = requireDirectory(path.join(basePath, environment));
-    console.log(base, envDependent);
     return deepAssign({}, base, envDependent);
 }
 
