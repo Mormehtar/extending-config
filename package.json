@@ -1,0 +1,33 @@
+{
+  "name": "extending-config",
+  "version": "1.0.0",
+  "description": "configuration through demanding common config and updating it with environment-dependent part",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node ./node_modules/mocha/bin/_mocha --recursive ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mormehtar/extending-config.git"
+  },
+  "keywords": [
+    "config",
+    "extend"
+  ],
+  "author": "Ilya Volkov",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Mormehtar/extending-config/issues"
+  },
+  "engines": {
+    "node": ">=6.2.0"
+  },
+  "homepage": "https://github.com/Mormehtar/extending-config#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "deep-assign": "^2.0.0"
+  }
+}
