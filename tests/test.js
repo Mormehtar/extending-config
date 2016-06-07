@@ -5,6 +5,10 @@ var configurator = require("../index");
 
 describe("Create config", function () {
 
+    it("Should work without params", function () {
+        configurator();
+    });
+
     it("Should get environment and common by default", function () {
         var config = configurator({basePath: path.join(__dirname, "environment")});
         assert.deepEqual(
