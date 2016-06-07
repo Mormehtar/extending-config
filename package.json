@@ -1,0 +1,23 @@
+{
+  "name": "extending-config",
+  "version": "1.0.0",
+  "description": "configuration through demanding common config and updating it with environment-dependent part",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mormehtar/extending-config.git"
+  },
+  "keywords": [
+    "config",
+    "extend"
+  ],
+  "author": "Ilya Volkov",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Mormehtar/extending-config/issues"
+  },
+  "homepage": "https://github.com/Mormehtar/extending-config#readme"
+}
