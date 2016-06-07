@@ -2,6 +2,9 @@ var path = require("path");
 var fs = require("fs");
 
 function requireDirectory(inputPath) {
+    if (!fs.existsSync(inputPath)) {
+        return {};
+    }
     var obj = {};
     var stat = fs.statSync(inputPath);
     if (stat.isDirectory()) {

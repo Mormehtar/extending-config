@@ -21,6 +21,20 @@ describe("Create config", function () {
         commonApp.data2 = 2;
     });
 
+    it("Should get environment and common by default", function () {
+        var config = configurator({basePath: path.join(__dirname, "environment"), environment: "abscent"});
+        assert.deepEqual(
+            config,
+            {
+                app: {
+                    data1: 1,
+                    data2: 2,
+                    data3: { a: 3, b: 4}
+                }
+            }
+        );
+    });
+
     it("Should get environment from params", function () {
         var config = configurator({basePath: path.join(__dirname, "environment"), environment: "another"});
         assert.deepEqual(
@@ -68,5 +82,5 @@ describe("Create config", function () {
                 }
             }
         );
-    })
+    });
 });

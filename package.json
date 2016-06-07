@@ -1,6 +1,6 @@
 {
   "name": "extending-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "configuration through demanding common config and updating it with environment-dependent part",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,6 @@
     "mocha": "^2.5.3"
   },
   "dependencies": {
-    "deep-assign": "^2.0.0"
+    "deep-assign": "=2.0.0"
   }
 }
