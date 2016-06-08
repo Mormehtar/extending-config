@@ -1,6 +1,6 @@
 {
   "name": "extending-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "configuration through demanding common config and updating it with environment-dependent part",
   "main": "index.js",
   "scripts": {
