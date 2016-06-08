@@ -18,7 +18,8 @@ describe("Create config", function () {
                     data1: 1,
                     data2: 42,
                     data3: { a: 3, b: 4}
-                }
+                },
+                environment: "test"
             }
         );
         var commonApp = require(path.join(__dirname, "environment", "common", "app"));
@@ -34,7 +35,8 @@ describe("Create config", function () {
                     data1: 1,
                     data2: 2,
                     data3: { a: 3, b: 4}
-                }
+                },
+                environment: "abscent"
             }
         );
     });
@@ -51,7 +53,8 @@ describe("Create config", function () {
                     data1: 1,
                     data2: 2,
                     data3: { a: 5, b: 4}
-                }
+                },
+                environment: "another"
             }
         );
         var commonApp = require(path.join(__dirname, "environment", "common", "app"));
@@ -69,7 +72,8 @@ describe("Create config", function () {
                 app: {
                     data2: 42,
                     data3: { a: 5}
-                }
+                },
+                environment: "test"
             }
         );
         var commonApp = require(path.join(__dirname, "environment", "another", "app"));
@@ -83,7 +87,8 @@ describe("Create config", function () {
             {
                 app: {
                     data2: 42
-                }
+                },
+                environment: "test"
             }
         );
     });

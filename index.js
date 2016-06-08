@@ -12,6 +12,7 @@ function config(options) {
         base = requireDirectory(path.join(basePath, common)) || {};
     }
     var envDependent = requireDirectory(path.join(basePath, environment)) || {};
+    base.environment = environment;
     return deepAssign(base, envDependent);
 }
 
